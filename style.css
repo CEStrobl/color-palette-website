@@ -1,0 +1,60 @@
+body{
+	background-color: gainsboro;
+	margin:0;
+}
+
+#main {
+	display: flex;
+	justify-content: space-between;
+    flex-direction: row;
+
+}
+
+/* Resources */
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/* Editor Pannel */
+#editor-pannel {
+	display:flex;
+	flex-direction: column;
+	padding: 10px;
+
+	background-color: white;
+
+	border-right: 2px solid rgb(84, 84, 128);
+
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Web display */
+#web-display{
+	display:flex;
+	flex-direction: column;
+	width:75%;
+
+	background-color: white;
+
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#web-display a {
+	text-decoration: none;
+	color: unset;
+}
+
+.hero{
+	background-color: blue;
+}
