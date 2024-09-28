@@ -21,8 +21,157 @@
 	<div id="main">
 		
 		<div id="editor-pannel">
-			<h1>Editor Pannel</h1>
+			<h1>Editor Panel</h1>
 			<p>Select the colors and see the real-time changes</p>
+			<br>
+
+			Adjust Your Palette 
+			<br>
+			<br>
+			<div class="select">
+				<input type="color" id="primary" oninput="updateAll()" value="#25354C"/>
+				Primary
+			</div>
+
+			<div class="select">
+				<input type="color" id="secondary" oninput="updateAll()" value="#EDE8E4"/>
+				Secondary
+			</div>
+
+			<div class="select">
+				<input type="color" id="accent1" oninput="updateAll()" value="#D28F46"/>
+				Accent 1
+			</div>
+			
+			<div class="select">
+				<input type="color" id="accent2" oninput="updateAll()" value="#9F4A54"/>
+				Accent 2
+			</div>
+
+			<div class="select">
+				<input type="color" id="accent2" oninput="updateAll()" value="#D7E3FB"/>
+				Accent 3
+			</div>
+
+			<br>
+			<br>
+
+			<div class="dropdown">
+				<!-- Hero -->
+				<h1>Hero</h1>
+				<label>Background & Text</label>
+				<div class="row">
+					<select id="herobg" 
+					oninput="dropdown(this, 'bgColor1', 'background-color')">
+						<option selected="selected" value="primary">Primary</option>
+						<option value="secondary">Secondary</option>
+						<option value="accent1">Accent1</option>
+						<option value="accent2">Accent2</option>
+						<option value="accent3">Accent3</option>
+					</select>
+					<div class="square" id="herobgsquare"></div>
+				</div>
+				<div class="row">
+					<select id="herotext" 
+					oninput="dropdown(this, 'bgColor1', 'color')">
+						<option value="primary">Primary</option>
+						<option selected="selected" value="secondary">Secondary</option>
+						<option value="accent1">Accent1</option>
+						<option value="accent2">Accent2</option>
+						<option value="accent3">Accent3</option>
+					</select>
+					<div class="square" id="herotextsquare"></div>
+
+				</div>
+
+				<br>
+
+				<label>Button Color</label>
+				<div class="row">
+					<select id="herobutton1" 
+					oninput="dropdown(this, 'color1', 'button')">
+						<option value="primary">Primary</option>
+						<option value="secondary">Secondary</option>
+						<option selected="selected" value="accent1">Accent1</option>
+						<option value="accent2">Accent2</option>
+						<option value="accent3">Accent3</option>
+					</select>
+					<div class="square" id="herobutton1square"></div>
+
+				</div>
+
+				<div class="row">
+					<select id="herobutton2" 
+					oninput="dropdown(this, 'color1', 'button-hover')">
+						<option value="primary">Primary</option>
+						<option selected="selected" value="secondary">Secondary</option>
+						<option value="accent1">Accent1</option>
+						<option value="accent2">Accent2</option>
+						<option value="accent3">Accent3</option>
+					</select>
+					<div class="square" id="herobutton2square"></div>
+				</div>
+
+				<br>
+
+
+				<!-- Services -->
+				<h1>Services</h1>
+				<label>Background & Text</label>
+				<div class="row">
+					<select id="servicebg" 
+					oninput="dropdown(this, 'bgColor2', 'color')">
+						<option value="primary">Primary</option>
+						<option selected="selected" value="secondary">Secondary</option>
+						<option value="accent1">Accent1</option>
+						<option value="accent2">Accent2</option>
+						<option value="accent3">Accent3</option>
+					</select>
+					<div class="square" id="servicebgsquare"></div>
+
+				</div>
+				<div class="row">
+					<select id="servicetext" 
+					oninput="dropdown(this, 'bgColor2', 'color')">
+						<option selected="selected" value="primary">Primary</option>
+						<option value="secondary">Secondary</option>
+						<option value="accent1">Accent1</option>
+						<option value="accent2">Accent2</option>
+						<option value="accent3">Accent3</option>
+					</select>
+					<div class="square" id="servicetextsquare"></div>
+				</div>
+
+				<br>
+
+				<label>Button Color</label>
+				<div class="row">
+					<select id="servicebutton1" 
+					oninput="dropdown(this, 'color2', 'button')">
+						<option value="primary">Primary</option>
+						<option selected="selected" value="secondary">Secondary</option>
+						<option value="accent1">Accent1</option>
+						<option value="accent2">Accent2</option>
+						<option value="accent3">Accent3</option>
+					</select>
+					<div class="square" id="servicebutton1square"></div>
+
+				</div>
+				<div class="row">
+					<select id="servicebutton2" 
+					oninput="dropdown(this, 'color2', 'button-hover')">
+						<option value="primary">Primary</option>
+						<option value="secondary">Secondary</option>
+						<option  selected="selected" value="accent1">Accent1</option>
+						<option value="accent2">Accent2</option>
+						<option value="accent3">Accent3</option>
+					</select>
+					<div class="square" id="servicebutton2square"></div>
+				</div>
+			</div>
+
+			<br><br><br>
+			
 		</div>
 		
 		

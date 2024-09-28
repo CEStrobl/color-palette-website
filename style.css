@@ -4,6 +4,11 @@ body{
 	height: max-content;
 }
 
+body {
+	scrollbar-width: thin;          /* "auto" or "thin" */
+	scrollbar-color: rgb(255, 255, 255) rgb(255, 255, 255);   /* scroll thumb and track */ 
+}
+
 #main {
 	display: flex;
 	justify-content: space-between;
@@ -40,15 +45,78 @@ body{
 	height: 100%;
 	width: 230px;
 
+	overflow-x: hidden;
+	overflow-y: scroll;
+
 	background-color: white;
 
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+#editor-pannel h1 {
+	font-size: 28px;
 }
 
 #editor-pannel p{
 	font-size: 16px;
 }
 
+input[type=color] {
+	border:none;
+	outline:none;
+	background-color:unset;
+
+	width: 40px;
+	height: 40px;
+}
+
+.square {
+	height: 25px;
+	width: 25px;
+	background-color: gray;
+	margin-right: 10px;
+}
+
+/* Selection */
+.select {
+	display: flex;
+	align-items: center;
+
+	font-size: 16px;
+}
+
+.select input {
+	margin: 5px 10px 5px 5px;
+}
+
+select, select:focus {
+	border: none;
+	outline:none;
+	margin: 0px;
+	padding:5px;
+
+	font-size: 16px;
+}
+
+label {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dropdown {
+	font-size: 16px;
+}
+
+.dropdown .row {
+	display:flex;
+	flex-direction: row-reverse;
+    justify-content: flex-end;
+	align-items: center;
+
+	margin: 5px 0px 10px 0px;
+}
 
 
 /* Web display */
@@ -86,7 +154,7 @@ body{
 
 /* Color Sets */
 .bgColor1 {
-	background-color: #25354C;
+	background-color: #5d5d5d;
 	color:white;
 }
 
@@ -160,7 +228,7 @@ body{
 }
 
 .color2{
-	background-color: #EDE8E4;
+	background-color: #ede8e400;
 	color: #D28F46;
 }
 
