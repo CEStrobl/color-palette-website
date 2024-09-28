@@ -39,6 +39,7 @@ body{
 }
 
 
+
 /* Web display */
 #web-display{
 	display:flex;
@@ -46,8 +47,6 @@ body{
 	width:75%;
 
 	background-color: white;
-
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #web-display a {
@@ -55,6 +54,73 @@ body{
 	color: unset;
 }
 
-.hero{
-	background-color: blue;
+/* Color Sets */
+.bgColor1 {
+	background-color: #25354C;
+	color:white;
 }
+
+.bgColor2{
+	background-color: #D7E3FB;
+	color: #25354C;
+}
+
+.primaryFont{
+	font-family:'Playfair Display';
+	font-weight: 500;
+}
+
+.secondaryFont{
+	font-family: 'raleway';
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+
+.textFont{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* HERO */
+.hero{
+	display:flex;
+	flex-direction: column;
+
+	padding: 40px 20px 40px 20px;
+}
+
+.hero h3{
+	font-weight: unset;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	font-style:unset;
+}
+/* ========== */
+
+
+/* Button */
+
+.button {
+	width: 200px;
+	padding: 10px 20px 10px 20px;
+	border: none;
+
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 12px;
+
+	background-color: #D28F46;
+	color: #EDE8E4;
+	transition: ease-in-out 0.2s;
+}
+
+.button:hover {
+	background-color: #EDE8E4;
+	color: #D28F46;
+}
+
