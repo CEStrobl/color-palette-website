@@ -1,12 +1,14 @@
 body{
-	background-color: gainsboro;
+	/* background-color: gainsboro; */
 	margin:0;
+	height: max-content;
 }
 
 #main {
 	display: flex;
 	justify-content: space-between;
-    flex-direction: row;
+	flex-direction: row;
+	margin-left: 250px;
 
 }
 
@@ -31,11 +33,20 @@ body{
 	flex-direction: column;
 	padding: 10px;
 
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 230px;
+
 	background-color: white;
 
-	border-right: 2px solid rgb(84, 84, 128);
-
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+#editor-pannel p{
+	font-size: 16px;
 }
 
 
@@ -44,14 +55,33 @@ body{
 #web-display{
 	display:flex;
 	flex-direction: column;
-	width:75%;
+	width:100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
 
+	border-left: 2px solid rgb(84, 84, 128);
 	background-color: white;
 }
 
 #web-display a {
 	text-decoration: none;
 	color: unset;
+}
+
+.col-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	padding: 40px;
+}
+
+.paragraph {
+	width: 65%;
+	font-size: 16px !important;
+	line-height: 30px;
+	text-align: center;
 }
 
 /* Color Sets */
@@ -61,7 +91,7 @@ body{
 }
 
 .bgColor2{
-	background-color: #D7E3FB;
+	background-color: #EDE8E4;
 	color: #25354C;
 }
 
@@ -80,6 +110,7 @@ body{
 
 .textFont{
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
 }
 
 
@@ -106,7 +137,7 @@ body{
 /* Button */
 
 .button {
-	width: 200px;
+	width: 160px;
 	padding: 10px 20px 10px 20px;
 	border: none;
 
@@ -114,13 +145,27 @@ body{
 	font-weight: 500;
 	font-size: 12px;
 
-	background-color: #D28F46;
-	color: #EDE8E4;
+	
 	transition: ease-in-out 0.2s;
 }
 
-.button:hover {
+.color1{
+	background-color: #D28F46;
+	color: #EDE8E4;
+}
+
+.color1:hover {
 	background-color: #EDE8E4;
 	color: #D28F46;
+}
+
+.color2{
+	background-color: #EDE8E4;
+	color: #D28F46;
+}
+
+.color2:hover {
+	background-color: #D28F46;
+	color: #EDE8E4;;
 }
 
