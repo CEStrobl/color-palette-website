@@ -1,0 +1,12 @@
+.media-block{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.media-left, .media-right{
+	display: flex;
+	flex-direction: column;
+	padding:20px;
+	margin:10px;
+}

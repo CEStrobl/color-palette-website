@@ -145,11 +145,15 @@ label {
 	padding: 40px;
 }
 
-.paragraph {
+p{
+    line-height: 30px;
+}
+
+.paragraph{
 	width: 65%;
-	font-size: 16px !important;
-	line-height: 30px;
-	text-align: center;
+    font-size: 16px !important;
+    line-height: 30px;
+    text-align: center;
 }
 
 /* Color Sets */

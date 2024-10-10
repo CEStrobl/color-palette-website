@@ -30,4 +30,5 @@
 .service-card p{
 	height: 60px;
 	margin: 20px 0px 20px 0px;
+	line-height: unset;
 }
